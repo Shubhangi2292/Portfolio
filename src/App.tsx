@@ -18,6 +18,14 @@ import { ResumeModal } from './components/ResumeModal';
 export default function App() {
   const [resumeModalOpen, setResumeModalOpen] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkViewport = () => setIsDesktop(window.innerWidth >= 1024);
+    checkViewport();
+    window.addEventListener("resize", checkViewport);
+    return () => window.removeEventListener("resize", checkViewport);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,13 +36,13 @@ export default function App() {
   }, []);
 
   // Laptop Screen Portal Emergence Math
-  const INTRO_STAGE_HEIGHT = 2200;
-  const PORTAL_START = 1000;
+  const INTRO_STAGE_HEIGHT = isDesktop ? 2200 : 0;
+  const PORTAL_START = isDesktop ? 1000 : 0;
 
   let portalScale = 1;
   let portalOpacity = 1;
 
-  if (scrollTop < INTRO_STAGE_HEIGHT) {
+  if (isDesktop && scrollTop < INTRO_STAGE_HEIGHT) {
     if (scrollTop < PORTAL_START) {
       portalOpacity = 0;
       portalScale = 0.35;
@@ -62,23 +70,23 @@ export default function App() {
       <Navbar onOpenResume={() => setResumeModalOpen(true)} />
 
       {/* Cinematic Video Intro Canvas Engine (Fixed Background) */}
-      <CinematicIntro />
+      {isDesktop && <CinematicIntro />}
 
       {/* Main Website Container with Laptop Screen Emergence Effect */}
       <div className="relative z-10">
         {/* Scroll spacer for initial laptop intro sequence */}
-        <div className="h-[2200px] pointer-events-none" />
+        {isDesktop && <div className="h-[2200px] pointer-events-none" />}
 
         {/* Live Interactive Portfolio Website (Emerging from Laptop Screen Portal) */}
         <div
           style={{
-            transform: scrollTop < INTRO_STAGE_HEIGHT ? `scale(${portalScale})` : 'none',
-            opacity: scrollTop < INTRO_STAGE_HEIGHT ? portalOpacity : 1,
+            transform: isDesktop && scrollTop < INTRO_STAGE_HEIGHT ? `scale(${portalScale})` : 'none',
+            opacity: isDesktop && scrollTop < INTRO_STAGE_HEIGHT ? portalOpacity : 1,
             transformOrigin: 'center center',
             willChange: 'transform, opacity'
           }}
           className={`w-full transition-opacity duration-100 ${
-            scrollTop < PORTAL_START ? 'pointer-events-none' : ''
+            isDesktop && scrollTop < PORTAL_START ? 'pointer-events-none' : ''
           }`}
         >
           <main>
