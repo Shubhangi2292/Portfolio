@@ -42,9 +42,9 @@ export const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-32 relative border-b border-cream-200/10 bg-[#070608]/65 backdrop-blur-[2px] overflow-hidden">
       {/* Ambient background wine radial */}
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-wine-900/20 blur-[170px] pointer-events-none rounded-full" />
+      <div className="absolute bottom-0 right-0 w-[90vw] max-w-[600px] h-[90vw] max-h-[600px] bg-wine-900/20 blur-[170px] pointer-events-none rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 relative z-10">
         {/* Section Coordinates */}
         <div className="flex items-center justify-between pb-6 mb-16 border-b border-cream-200/10 text-xs font-mono tracking-widest text-cream-400">
           <div className="flex items-center gap-3">
@@ -59,7 +59,7 @@ export const Contact: React.FC = () => {
 
         {/* Dramatic Section Headline: LET'S CREATE SOMETHING MEANINGFUL. */}
         <div className="mb-20">
-          <h2 className="font-editorial text-6xl sm:text-7xl md:text-8xl xl:text-9xl font-semibold text-cream-100 tracking-tight leading-[0.88] select-none text-balance">
+          <h2 className="font-editorial text-3xl sm:text-6xl md:text-8xl xl:text-9xl font-semibold text-cream-100 tracking-tight leading-[0.88] select-none text-balance">
             <span>LET'S</span>
             <span className="block italic font-light text-cream-300 font-editorial ml-4 sm:ml-12 hover:text-wine-300 transition-colors">
               CREATE

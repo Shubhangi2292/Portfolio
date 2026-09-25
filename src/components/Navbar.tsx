@@ -44,7 +44,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
             : 'bg-transparent py-6'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 flex items-center justify-between">
           {/* Logo SB */}
           <a
             href="#"
@@ -106,7 +106,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume }) => {
 
       {/* Elegant Fullscreen Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-50 bg-[#070608]/65 backdrop-blur-[2px]/98 backdrop-blur-xl flex flex-col justify-between p-8 animate-in fade-in duration-300 md:hidden">
+        <div className="fixed inset-0 z-50 bg-[#070608]/65 backdrop-blur-[2px]/98 backdrop-blur-xl flex flex-col justify-between p-6 sm:p-8 overflow-y-auto max-h-screen animate-in fade-in duration-300 md:hidden">
           {/* Top Bar inside mobile menu */}
           <div className="flex items-center justify-between border-b border-cream-200/10 pb-6">
             <div className="flex items-center gap-3">

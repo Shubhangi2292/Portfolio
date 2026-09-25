@@ -37,13 +37,13 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-10 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-6 md:p-10 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
       {/* Backdrop */}
       <div className="absolute inset-0" onClick={onClose} />
 
       <div className="relative w-full max-w-4xl max-h-[92vh] bg-[#120E13] border border-cream-200/20 rounded-sm shadow-2xl flex flex-col overflow-hidden z-10">
         {/* Top Control Bar */}
-        <div className="flex items-center justify-between px-6 py-4 border-b border-cream-200/10 bg-[#161017]">
+        <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-b border-cream-200/10 bg-[#161017]">
           <div className="flex items-center gap-3">
             <span className="font-editorial text-lg font-bold text-cream-100">
               CURRICULUM VITAE
@@ -77,7 +77,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
           <div className="border-b-2 border-[#1E1920] pb-6 mb-6">
             <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
               <div>
-                <h1 className="font-editorial text-4xl sm:text-5xl font-bold tracking-tight text-[#1E1920]">
+                <h1 className="font-editorial text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-[#1E1920]">
                   {PERSONAL_INFO.name}
                 </h1>
                 <p className="font-mono text-sm tracking-widest uppercase font-semibold text-[#6E1C2B] mt-1">

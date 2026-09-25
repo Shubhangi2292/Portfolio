@@ -25,13 +25,13 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
   if (!project) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-10 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-6 md:p-10 bg-black/85 backdrop-blur-md animate-in fade-in duration-200">
       {/* Backdrop click handler */}
       <div className="absolute inset-0" onClick={onClose} />
 
       <div className="relative w-full max-w-4xl max-h-[92vh] bg-[#100C11] border border-cream-200/20 rounded-sm shadow-2xl flex flex-col overflow-hidden z-10">
         {/* Header Bar */}
-        <div className="flex items-center justify-between px-6 py-5 border-b border-cream-200/10 bg-[#150F16]">
+        <div className="flex items-center justify-between px-4 sm:px-6 py-4 border-b border-cream-200/10 bg-[#150F16]">
           <div className="flex items-center gap-3">
             <span className="font-editorial text-2xl font-bold text-wine-400">
               {project.number}
@@ -54,7 +54,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
         {/* Scrollable Content Body */}
         <div className="overflow-y-auto p-6 sm:p-10 space-y-8">
           <div>
-            <h3 className="font-editorial text-3xl sm:text-4xl lg:text-5xl font-semibold text-cream-100 leading-tight">
+            <h3 className="font-editorial text-2xl sm:text-4xl lg:text-5xl font-semibold text-cream-100 leading-tight">
               {project.title}
             </h3>
             <p className="text-sm font-mono text-wine-400 mt-2">

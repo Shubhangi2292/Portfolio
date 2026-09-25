@@ -6,9 +6,9 @@ export const About: React.FC = () => {
   return (
     <section id="about" className="py-32 relative border-b border-cream-200/10 bg-[#070608]/65 backdrop-blur-[2px] overflow-hidden">
       {/* Decorative ambient wine gradient in corner */}
-      <div className="absolute top-1/4 -right-20 w-[500px] h-[500px] bg-wine-900/15 blur-[150px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/4 -right-20 w-[90vw] max-w-[500px] h-[90vw] max-h-[500px] bg-wine-900/15 blur-[150px] pointer-events-none rounded-full" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 relative z-10">
         {/* Editorial Section Coordinate Header */}
         <div className="flex items-center justify-between pb-6 mb-16 border-b border-cream-200/10 text-xs font-mono tracking-widest text-cream-400">
           <div className="flex items-center gap-3">
@@ -26,10 +26,10 @@ export const About: React.FC = () => {
           {/* Left Column: Massive Editorial Typography "ABOUT ME" with overlapping intro */}
           <div className="lg:col-span-6 relative">
             <div className="select-none">
-              <span className="font-editorial text-5xl sm:text-8xl md:text-9xl font-semibold tracking-tight text-cream-100/90 leading-[0.85] block">
+              <span className="font-editorial text-3xl sm:text-7xl md:text-9xl font-semibold tracking-tight text-cream-100/90 leading-[0.85] block">
                 ABOUT
               </span>
-              <span className="font-editorial text-5xl sm:text-8xl md:text-9xl font-light italic text-wine-400/90 leading-[0.85] block ml-4 sm:ml-16">
+              <span className="font-editorial text-3xl sm:text-7xl md:text-9xl font-light italic text-wine-400/90 leading-[0.85] block ml-4 sm:ml-16">
                 ME.
               </span>
             </div>

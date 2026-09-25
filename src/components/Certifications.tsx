@@ -37,14 +37,14 @@ export const Certifications: React.FC = () => {
 
   return (
     <section id="certifications" className="py-28 relative border-b border-cream-200/10 bg-[#09070B]">
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-cream-200/10 gap-4">
           <div>
             <span className="text-xs font-mono tracking-[0.25em] text-wine-400 uppercase block mb-2">
               05 / CREDENTIALS & SPECIALIZATIONS
             </span>
-            <h2 className="font-editorial text-4xl sm:text-5xl md:text-6xl font-semibold text-cream-100 tracking-tight">
+            <h2 className="font-editorial text-3xl sm:text-5xl md:text-6xl font-semibold text-cream-100 tracking-tight">
               CERTIFICATIONS
             </h2>
           </div>

@@ -60,19 +60,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
       {/* Atmospheric ambient wine glow with subtle parallax */}
       <div
-        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[550px] bg-wine-900/25 blur-[160px] pointer-events-none rounded-full transition-transform duration-500 ease-out"
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[750px] h-[350px] sm:h-[550px] bg-wine-900/25 blur-[160px] pointer-events-none rounded-full transition-transform duration-500 ease-out"
         style={{
           transform: `translate3d(calc(-50% + ${mouseOffset.x * 20}px), calc(-50% + ${mouseOffset.y * 20}px), 0)`,
         }}
       />
       <div
-        className="absolute top-12 right-12 w-[420px] h-[420px] bg-wine-800/18 blur-[130px] pointer-events-none rounded-full transition-transform duration-500 ease-out"
+        className="absolute top-12 right-12 w-[80vw] max-w-[420px] h-[80vw] max-h-[420px] bg-wine-800/18 blur-[130px] pointer-events-none rounded-full transition-transform duration-500 ease-out"
         style={{
           transform: `translate3d(${mouseOffset.x * -15}px, ${mouseOffset.y * -15}px, 0)`,
         }}
       />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 w-full relative z-10 my-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 w-full relative z-10 my-auto">
         {/* Availability kicker tag */}
         <div className="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-full border border-wine-700/40 bg-wine-950/40 backdrop-blur-md mb-8">
           <span className="relative flex h-2 w-2">
@@ -102,7 +102,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
               </div>
 
               {/* Staggered & Overlapping Headline */}
-              <h1 className="font-editorial text-4xl sm:text-7xl md:text-8xl xl:text-9xl font-semibold tracking-tight text-cream-100 leading-[0.9] select-none text-balance">
+              <h1 className="font-editorial text-3xl sm:text-6xl md:text-8xl xl:text-9xl font-semibold tracking-tight text-cream-100 leading-[0.9] select-none text-balance">
                 <span className="block transform hover:text-white transition-colors duration-300">
                   SHUBHANGI
                 </span>
@@ -246,7 +246,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
       {/* Bottom Editorial Marquee / Metric Ribbon */}
       <div className="w-full mt-16 border-y border-cream-200/10 bg-[#0A070B]/75 backdrop-blur-[4px]/95 py-4 relative z-10">
-        <div className="max-w-7xl mx-auto px-6 md:px-10 flex flex-wrap items-center justify-between gap-y-3 text-xs tracking-[0.2em] font-mono uppercase text-cream-400">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 flex flex-wrap items-center justify-between gap-y-3 text-xs tracking-[0.2em] font-mono uppercase text-cream-400">
           <div className="flex items-center gap-3">
             <span className="w-1.5 h-1.5 rounded-full bg-wine-500" />
             <span>DEGREE: B.TECH CSE</span>

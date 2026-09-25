@@ -5,7 +5,7 @@ import { GraduationCap, Award, BookCheck, Sparkles, Building2 } from 'lucide-rea
 export const Education: React.FC = () => {
   return (
     <section id="education" className="py-32 relative border-b border-cream-200/10 bg-[#070608]/65 backdrop-blur-[2px]">
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
         {/* Section Coordinates */}
         <div className="flex items-center justify-between pb-6 mb-16 border-b border-cream-200/10 text-xs font-mono tracking-widest text-cream-400">
           <div className="flex items-center gap-3">
@@ -20,7 +20,7 @@ export const Education: React.FC = () => {
 
         {/* Section Title */}
         <div className="mb-20">
-          <h2 className="font-editorial text-6xl sm:text-7xl md:text-8xl font-semibold text-cream-100 tracking-tight leading-[0.9]">
+          <h2 className="font-editorial text-3xl sm:text-6xl md:text-8xl font-semibold text-cream-100 tracking-tight leading-[0.9]">
             ACADEMIC
             <span className="block font-light italic text-wine-400/90 font-editorial ml-4 sm:ml-12">
               EXCELLENCE.
@@ -45,7 +45,7 @@ export const Education: React.FC = () => {
 
               <div className="space-y-4">
                 <div className="flex items-baseline gap-4">
-                  <span className="font-editorial text-7xl sm:text-8xl font-bold text-cream-100 tabular-nums">
+                  <span className="font-editorial text-5xl sm:text-7xl md:text-8xl font-bold text-cream-100 tabular-nums">
                     7.84
                   </span>
                   <span className="text-sm font-mono text-wine-400 tracking-widest uppercase">

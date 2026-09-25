@@ -9,14 +9,14 @@ export const ResumeSection: React.FC<ResumeSectionProps> = ({ onOpenResume }) =>
   return (
     <section className="py-24 relative border-b border-cream-200/10 bg-[#0C090E] overflow-hidden">
       {/* Ambient wine backdrop glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-wine-900/20 blur-[130px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] max-w-[600px] h-[300px] bg-wine-900/20 blur-[130px] pointer-events-none rounded-full" />
 
-      <div className="max-w-5xl mx-auto px-6 md:px-10 text-center relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-10 text-center relative z-10">
         <span className="text-xs font-mono tracking-[0.25em] text-wine-400 uppercase block mb-3">
           OPPORTUNITIES & COLLABORATION
         </span>
 
-        <h2 className="font-editorial text-4xl sm:text-5xl md:text-6xl font-semibold text-cream-100 tracking-tight max-w-3xl mx-auto leading-tight text-balance">
+        <h2 className="font-editorial text-3xl sm:text-5xl md:text-6xl font-semibold text-cream-100 tracking-tight max-w-3xl mx-auto leading-tight text-balance">
           LET'S BUILD SOMETHING MEANINGFUL
         </h2>
 
